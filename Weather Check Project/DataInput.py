@@ -40,24 +40,27 @@ def createTuple(oldFile):
 tup = createTuple('weather-check.csv')
 
 regex = '\"'
-
-for row in tup:
-    for i in range(0,len(row)-2):
-        if(bool(re.search(regex, row[i])) == True):
-            if(bool(re.search(regex,row[i+1])) == True):
-                #join the strings
-                seq = (row[i], row[i+1])
-                row[i] = ','.join(seq)
-                #pop out useless string
-                row.pop(i+1)
-                break
-            elif(bool(re.search(regex,row[i+2])) == True):
-                seq = (row[i], row[i+1], row[i+2])
-                row[i] = ','.join(seq)
-                #pop out useless string
-                row.pop(i+1)
-                row.pop(i+1)
-                break
+def incomeTrans(tup):
+    for row in tup:
+        for i in range(0,len(row)-2):
+            if(bool(re.search(regex, row[i])) == True):
+                if(bool(re.search(regex,row[i+1])) == True):
+                    #join the strings
+                    seq = (row[i], row[i+1])
+                    row[i] = ','.join(seq)
+                    #pop out useless string
+                    row.pop(i+1)
+                    break
+                elif(bool(re.search(regex,row[i+2])) == True):
+                    seq = (row[i], row[i+1], row[i+2])
+                    row[i] = ','.join(seq)
+                    #pop out useless string
+                    row.pop(i+1)
+                    row.pop(i+1)
+                    break
+                    
+t = incomeTrans(tup)
+                   
 for row in tup:
      print(row)               
 
