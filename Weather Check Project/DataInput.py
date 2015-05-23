@@ -59,9 +59,38 @@ def incomeTrans(tup):
                     row.pop(i+1)
                     break
                     
-t = incomeTrans(tup)
-                   
-for row in tup:
-     print(row)               
 
+
+# app category
+def createAppCategory(tup):    
+    appCategory = {'App':'ID'}
+    counter = 0                   
+    for row in tup:
+        for i in range(0,len(row)):
+            if (row[2] == 'A specific website or app (please provide the answer)'):
+                if len(appCategory) == 0 :
+                    counter += 1
+                    #print("ID: %d, %s" %(counter,row[3]))
+                    appCategory.update({row[3]:str(counter)})
+                    break
+                else:
+                    for j in range(0,len(appCategory)):
+                        if (not(row[3] in appCategory.keys())):
+                            counter += 1
+                            #print("ID: %d, %s" %(counter,row[3]))
+                            appCategory.update({row[3]:str(counter)})
+                            #print(row[3])   
+                            break            
+    return appCategory
+    
+def appCategoryTrans(tup):
+    newT = incomeTrans(tup)
+    dict = createAppCategory(tup)
+    for row in tup:
+        for i in range(3,4):
+            if(row[3] in dict.keys()):
+                row[3] = dict[row[3]]
+    return tup
+                
+print(appCategoryTrans(tup))
 
