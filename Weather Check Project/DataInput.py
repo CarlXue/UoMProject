@@ -58,7 +58,58 @@ def incomeTrans(tup):
                     row.pop(i+1)
                     row.pop(i+1)
                     break
-                    
+    return tup
+    
+    
+def appUseTrans(tup):
+    regex = '\"'
+
+    for row in tup:
+        count = 0
+        templist = []
+        index = 0
+        length = len(row)
+        for i in range(0,length):
+            if (row[i].startswith(regex) and not(row[i].endswith(regex))):
+                count += 1
+                templist.append(row[i])
+                index = i
+            elif (row[i].endswith(regex) and not(row[i].startswith(regex))):
+                templist.append(row[i])
+                row[index] = ','.join(templist)
+                #delete useless data
+                #print(count, index)                    
+                #print(row)
+                #reset
+                count = 0
+                templist =[]
+                #print (row[index])
+                
+            elif (not(count == 0)):
+                count += 1
+                templist.append(row[i])
+                #print(templist)
+    for row in tup:
+        for z in range(0,len(row)):
+            if (row[0] == '3882027944'):
+                row.pop(8)
+                row.pop(8)
+                #print(row)
+                break
+            if (row[0] == '3878526543'):
+                row.pop(4)
+                row.pop(4)
+                row.pop(4)
+                #print(row)
+                break
+            if (row[0] == '3878262512'):
+                row.pop(8)
+                row.pop(8)
+                #print(row)
+                break
+
+    return tup
+                                
 
 
 # app category
@@ -70,8 +121,8 @@ def createAppCategory(tup):
             if (row[2] == 'A specific website or app (please provide the answer)'):
                 if len(appCategory) == 0 :
                     counter += 1
-                    #print("ID: %d, %s" %(counter,row[3]))
                     appCategory.update({row[3]:str(counter)})
+                    #print("ID: %d, %s" %(counter,row[3]))                                  
                     break
                 else:
                     for j in range(0,len(appCategory)):
@@ -91,6 +142,33 @@ def appCategoryTrans(tup):
             if(row[3] in dict.keys()):
                 row[3] = dict[row[3]]
     return tup
-                
-print(appCategoryTrans(tup))
+   
+def createIncomeCategory(tup): 
+    incomeTrans(tup)   
+    incomeCategory = {'incomeRange':'ID'}
+    counter = 0                   
+    for row in tup:
+        for i in range(0,len(row)):
+           if len(incomeCategory) == 0 :
+               counter += 1
+               print("ID: %d, %s" %(counter,row[7]))
+               appCategory.update({row[7]:str(counter)})
+               break
+           else:
+               for j in range(0,len(incomeCategory)):
+                    if (not(row[7] in incomeCategory.keys())):
+                        counter += 1
+                        print("ID: %d, %s" %(counter,row[7]))
+                        print(row)
+                        incomeCategory.update({row[7]:str(counter)})
+                        #print(row[3])   
+                        break            
+    return incomeCategory 
+ 
 
+
+
+tup = incomeTrans(tup)
+
+for row in appUseTrans(tup):        
+    print(len(row))
