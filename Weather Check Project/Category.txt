@@ -1,0 +1,183 @@
+App category
+ID: 1, -
+ID: 2, Iphone app
+ID: 3, AccuWeather App
+ID: 4, nice
+ID: 5, Weather.com
+ID: 6, Weatherbug
+ID: 7, weather channel app
+ID: 8, Yahoo weather iphone
+ID: 9, Weather Puppy
+ID: 10, AccuWeather
+ID: 11, Apple weater
+ID: 12, The Weather Channel app
+ID: 13, "google ""weather"""
+ID: 14, Weather Underground
+ID: 15, Weather Timeline (android)
+ID: 16, 1 weather
+ID: 17, Weather Channel app
+ID: 18, "Weather Underground, also local tv news half the time."
+ID: 19, weatherbug app
+ID: 20, weather bug
+ID: 21, FancyClock app on my phone and accuweather.com
+ID: 22, GOES West Satalite
+ID: 23, Intellicast / Storm
+ID: 24, ipod weather 
+ID: 25, weatherbug
+ID: 26, weatherbug.com
+ID: 27, iphone weather app
+ID: 28, Weather Bug
+ID: 29, Accuweather
+ID: 30, www.wunderground.com
+ID: 31, The Weather Channel
+ID: 32, noaa.gov
+ID: 33, 1weather
+ID: 34, yahoo
+ID: 35, Weather Bug App
+ID: 36, Yo Window
+ID: 37, Weather bug
+ID: 38, Dark Sky
+ID: 39, aol
+ID: 40, NOAA and The Weather Channel
+ID: 41, Weather Kitty
+ID: 42, "Internet, tv, radio, newspaper"
+ID: 43, App on Iphone
+ID: 44, yr.no
+ID: 45, weather.com
+ID: 46, weatherunderground
+ID: 47, wunderground.com
+ID: 48, Weather channel app
+ID: 49, intellicast
+ID: 50, Weather Risk
+ID: 51, local newspaper online  Weather Bug  NOAH
+ID: 52, AccuWeather or Weather Underground
+ID: 53, "Weatherbug, Storm"
+ID: 54, look/feel the weather outside
+ID: 55, accuweather
+ID: 56, apple-provided site
+ID: 57, Weather channel app on my phone and ipad
+ID: 58, Numerous local weather apps
+ID: 59, The Weather Channel app on my phone
+ID: 60, Storm Team 4
+ID: 61, KCRA online
+ID: 62, yahoo weather
+ID: 63, weatherbug on my phone
+ID: 64, the weather channel app on my phone
+ID: 65, Weather Channel.com
+ID: 66, Weather Channel app on phone
+ID: 67,  Weather underground 
+ID: 68, IPhone
+ID: 69, Weather Channel app android
+ID: 70, NOAA app
+ID: 71, Via my iPhone builtin app
+ID: 72, weatherforyou.com
+ID: 73, Weather Underground through HD Widgets
+ID: 74, weather app
+ID: 75, iPhone app
+ID: 76, National Weather Service site
+ID: 77, Weather channel
+ID: 78, the weather channel
+ID: 79, iPhone weather app
+ID: 80, The Weather Channel for iPhone or iPad 
+ID: 81, m.accuweather.com
+ID: 82, National Weather Service
+ID: 83, weather channel
+ID: 84, Google App
+ID: 85, The Weather Channel app on my phone.
+ID: 86, WEatherbug
+ID: 87, DirecTv Weather App
+ID: 88, iphone
+ID: 89, smart phone
+ID: 90, Weather app
+ID: 91, basic weather app on my iPhone
+ID: 92, phone
+ID: 93, WeatherBug
+ID: 94, the weather channel app
+ID: 95, Bing
+ID: 96, Weather Channel App
+ID: 97, Talk to my mother.
+ID: 98, i look outside
+ID: 99, Weather Channel App in IPhone
+ID: 100, Weather Channel
+ID: 101, The weather app on the iPhone 
+ID: 102, The weather channel iPad app
+ID: 103, weather underground
+ID: 104, My husband usually informs me about the next day's weather.
+ID: 105, Default iPhone app
+ID: 106, Google now
+ID: 107, Chrome app
+ID: 108, Apple Weather App
+ID: 109, Iphone weather app
+ID: 110, desktop icon
+ID: 111, The one that comes on your iphone
+ID: 112, the weather channel and local TV kxan
+ID: 113, Wunderground
+ID: 114, Intellicast (site) & WUnderground (app) 
+ID: 115, myphone
+ID: 116, weather.gov
+ID: 117, my phone has a pre-loaded app
+ID: 118, www.weather.gov
+ID: 119, Weather & Clock widget
+ID: 120, yahoo weather app
+ID: 121, Www.weather.com
+ID: 122, weather app on iphone
+
+Income
+ID: 1, "$50,000 to $74,999"
+ID: 2, Prefer not to answer
+ID: 3, "$100,000 to $124,999"
+ID: 4, "$150,000 to $174,999"
+ID: 5, "$25,000 to $49,999"
+ID: 6, -
+ID: 7, "$0 to $9,999"
+ID: 8, "$10,000 to $24,999"
+ID: 9, "$75,000 to $99,999"
+ID: 10, "$200,000 and up"
+ID: 11, "$175,000 to $199,999"
+ID: 12, "$125,000 to $149,999"
+
+Check or not
+ID: 1, Yes
+ID: 2, No
+
+How to check weather
+ID: 1, The default weather app on your phone
+ID: 2, A specific website or app (please provide the answer)
+ID: 3, The Weather Channel
+ID: 4, -
+ID: 5, Internet search
+ID: 6, Local TV News
+ID: 7, Newspaper
+ID: 8, Radio weather
+ID: 9, Newsletter
+
+Samrt watch
+ID: 1, Very likely
+ID: 2, Somewhat likely
+ID: 3, Very unlikely
+ID: 4, -
+ID: 5, Somewhat unlikely
+
+Age
+ID: 1, 30 - 44
+ID: 2, 18 - 29
+ID: 3, -
+ID: 4, 45 - 59
+ID: 5, 60+
+
+Gender
+ID: 1, Male
+ID: 2, -
+ID: 3, Female
+
+Region
+ID: 1, South Atlantic
+ID: 2, -
+ID: 3, Middle Atlantic
+ID: 4, West South Central
+ID: 5, Pacific
+ID: 6, West North Central
+ID: 7, East North Central
+ID: 8, Mountain
+ID: 9, New England
+ID: 10, East South Central
