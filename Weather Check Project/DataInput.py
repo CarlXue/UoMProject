@@ -169,6 +169,8 @@ def createIncomeCategory(tup):
 
 
 tup = incomeTrans(tup)
+# the last data table
+final_data_table = appUseTrans(tup)
 
-for row in appUseTrans(tup):        
-    print(len(row))
+
+

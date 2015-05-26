@@ -1,0 +1,111 @@
+@RELATION how-check-weather
+
+@ATTRIBUTE id	NUMERIC
+@ATTRIBUTE do-check	{Yes,No}
+@ATTRIBUTE how-check	{"The Weather Channel","Local TV News","Radio weather","Internet search","The default weather app on your phone","Newsletter","Newspaper","A specific website or app (please provide the answer)"}
+@ATTRIBUTE specific-website	STRING
+@ATTRIBUTE smartwatch	{"Very likely","Somewhat likely","Somewhat unlikely","Very unlikely"}
+@ATTRIBUTE age	{"18 - 29","30 - 44","45 - 59","60+"}
+@ATTRIBUTE gender	{Female,Male}
+@ATTRIBUTE income	{"$0 to $9,999","$10,000 to $24,999","$25,000 to $49,999","$50,000 to $74,999","$75,000 to $99,999","$100,000 to $124,999","$125,000 to $149,999","$150,000 to $174,999","$175,000 to $199,999","$200,000 and up"}
+@ATTRIBUTE region	{"New England","Middle Atlantic","East North Central","West North Central","South Atlantic","East South Central","West South Central","Mountain","Pacific"}
+
+@DATA
+1,Yes,?,"bom.gov.au","Very unlikely","30 - 44",Male,"$25,000 to $49,999",?
+2,No,?,?,"Somewhat likely","18 - 29",Male,"$175,000 to $199,999",?
+3,Yes,?,"The Age Website","Somewhat likely","18 - 29",Male,?,?
+4,Yes,?,"Weatherzone on Android","Very likely","18 - 29",Male,?,?
+5,No,?,"The weather Channel Android App",?,"18 - 29",Male,"$50,000 to $74,999",?
+6,Yes,?,"Yahoo","Very likely","18 - 29",Male,"$0 to $9,999","New England"
+7,Yes,?,?,"Very likely","18 - 29",Female,"$25,000 to $49,999",?
+8,Yes,?,"Weather Channel (app)","Somewhat likely","18 - 29",Male,"$10,000 to $24,999",?
+10,Yes,?,?,"Somewhat likely","18 - 29",Female,?,"Pacific"
+11,No,?,?,"Very likely","18 - 29",Female,"$0 to $9,999",?
+12,No,?,"OK Google","Somewhat likely","18 - 29",Male,"$10,000 to $24,999","Mountain"
+13,No,?,"www.bom.gov.au","Somewhat unlikely","18 - 29",Male,"$10,000 to $24,999",?
+14,No,?,"Yahoo! weather","Very likely","18 - 29",Male,?,"Pacific"
+15,Yes,?,?,"Very unlikely","18 - 29",Male,?,?
+16,Yes,?,"Yahoo Weather","Very likely","18 - 29",Male,?,"Pacific"
+17,Yes,?,"Weather on iPhone","Somewhat likely","18 - 29",Female,"$75,000 to $99,999","Middle Atlantic"
+18,No,?,?,"Somewhat unlikely","18 - 29",Male,"$25,000 to $49,999","Pacific"
+19,No,?,?,"Somewhat likely","18 - 29",Male,"$0 to $9,999",?
+20,Yes,?,?,"Somewhat likely","18 - 29",Male,"$25,000 to $49,999",?
+21,Yes,?,"http://www.weather.com/","Somewhat likely","30 - 44",Female,"$25,000 to $49,999",?
+22,Yes,?,"http://www.weather.com.au/","Somewhat likely","18 - 29",Male,?,?
+23,Yes,?,?,"Very likely","18 - 29",Female,?,?
+24,Yes,?,?,"Somewhat likely","30 - 44",Female,"$200,000 and up",?
+25,Yes,?,?,"Somewhat likely","18 - 29",Male,"$125,000 to $149,999",?
+26,No,?,"Google","Somewhat likely","18 - 29",Male,"$50,000 to $74,999",?
+27,Yes,?,"The Weather Channel","Very likely","30 - 44",Female,"$25,000 to $49,999",?
+28,Yes,?,"BOM","Somewhat likely","18 - 29",Male,"$50,000 to $74,999",?
+29,Yes,?,"WeatherZone APP/BoM Radar app.","Somewhat likely","18 - 29",Male,?,?
+30,Yes,?,?,"Very likely","18 - 29",Male,?,?
+31,Yes,?,?,"Very likely","18 - 29",Male,"$25,000 to $49,999",?
+32,Yes,?,"AccuWeather.com","Very likely","18 - 29",Male,"$0 to $9,999","East South Central"
+33,Yes,?,"Weather app on iPhone","Very likely","18 - 29",Male,"$100,000 to $124,999","Pacific"
+34,No,?,"iphone default app","Somewhat likely","18 - 29",Female,"$10,000 to $24,999","Pacific"
+35,No,?,?,"Somewhat likely","18 - 29",Male,"$75,000 to $99,999","Pacific"
+36,Yes,?,?,"Somewhat likely","18 - 29",Male,"$125,000 to $149,999",?
+37,Yes,?,"Weatherzone","Very likely","30 - 44",Female,"$50,000 to $74,999",?
+38,Yes,?,"BOM","Very likely","18 - 29",Male,"$200,000 and up",?
+39,Yes,?,"Weather on iPhone","Very likely","18 - 29",Female,"$25,000 to $49,999",?
+40,Yes,?,"Weather App","Very likely","18 - 29",Male,"$25,000 to $49,999",?
+41,Yes,?,"Weatherzone+","Somewhat likely","30 - 44",Male,"$75,000 to $99,999","Mountain"
+42,No,?,"AccuWeather","Very unlikely","30 - 44",Male,"$10,000 to $24,999",?
+43,No,?,?,"Somewhat likely","18 - 29",Male,"$25,000 to $49,999",?
+44,Yes,?,?,?,"18 - 29",Male,?,?
+45,No,?,"weather channel app in iPhone","Somewhat likely","18 - 29",Male,"$10,000 to $24,999",?
+46,No,?,?,"Somewhat likely","18 - 29",Male,"$10,000 to $24,999",?
+47,No,?,?,"Somewhat unlikely","30 - 44",Male,?,?
+48,No,?,?,"Somewhat likely","18 - 29",Male,"$10,000 to $24,999","Pacific"
+49,No,?,"AccuWeather.com","Very unlikely","30 - 44",Male,"$25,000 to $49,999",?
+51,No,?,"BOM","Somewhat likely","18 - 29",Male,"$125,000 to $149,999",?
+52,No,?,"weather","Somewhat unlikely","18 - 29",Female,?,"East South Central"
+53,Yes,?,"The Weather Channel App","Somewhat unlikely","18 - 29",Male,"$150,000 to $174,999","Pacific"
+54,Yes,?,?,"Very likely","18 - 29",Male,?,?
+55,Yes,?,"MoWeather","Very likely","18 - 29",Male,"$25,000 to $49,999","East South Central"
+56,Yes,?,?,"Very unlikely","18 - 29",Male,"$0 to $9,999",?
+57,Yes,?,?,"Very likely","18 - 29",Male,"$0 to $9,999","East North Central"
+58,Yes,?,"Weather","Somewhat likely","18 - 29",Male,?,?
+59,Yes,?,?,"Somewhat likely","18 - 29",Female,?,?
+60,Yes,?,"'Weather' app on iphone","Very likely","18 - 29",Male,"$0 to $9,999",?
+61,Yes,?,?,"Somewhat likely","18 - 29",Male,?,?
+62,Yes,?,"default app in Iphone","Very likely","18 - 29",Female,?,?
+63,Yes,?,?,"Very likely","18 - 29",Male,"$25,000 to $49,999","South Atlantic"
+64,Yes,?,"AccuWeather.com","Very unlikely","18 - 29",Male,?,"Mountain"
+65,Yes,?,"Apple Weather App","Somewhat likely","18 - 29",Male,"$25,000 to $49,999","South Atlantic"
+66,No,?,?,"Somewhat unlikely","18 - 29",Male,?,?
+67,Yes,?,"http://www.weatherzone.com.au","Very likely","30 - 44",Female,"$150,000 to $174,999","West South Central"
+68,Yes,?,?,"Very likely","30 - 44",Male,"$125,000 to $149,999",?
+69,Yes,?,"Accuweather","Very likely","30 - 44",Female,?,?
+70,Yes,?,"AccuWeather","Somewhat likely","18 - 29",Male,"$50,000 to $74,999",?
+71,No,?,?,"Very likely","18 - 29",Female,"$25,000 to $49,999",?
+72,Yes,?,"Weather Channel App","Somewhat unlikely","18 - 29",Male,"$200,000 and up",?
+73,Yes,?,?,"Somewhat likely","18 - 29",Male,"$25,000 to $49,999","Pacific"
+74,Yes,?,"Google weather","Somewhat likely","18 - 29",Male,?,?
+75,Yes,?,"http://www.bom.gov.au/","Very likely","18 - 29",Male,"$75,000 to $99,999",?
+76,Yes,?,?,"Somewhat likely","18 - 29",Male,"$75,000 to $99,999","Pacific"
+77,No,?,"BOM","Very unlikely","18 - 29",Male,?,?
+78,Yes,?,?,"Very likely","18 - 29",Male,?,?
+79,Yes,?,"www.accuweather.com","Very likely","18 - 29",Female,"$25,000 to $49,999","Pacific"
+80,No,?,?,"Very unlikely","18 - 29",Male,"$0 to $9,999","Pacific"
+81,No,?,?,"Somewhat likely","18 - 29",Male,?,?
+82,No,?,?,"Very likely","18 - 29",Male,"$175,000 to $199,999","South Atlantic"
+83,No,?,?,"Very likely","18 - 29",Male,"$0 to $9,999",?
+84,No,?,?,"Somewhat likely","18 - 29",Male,?,?
+85,Yes,?,?,"Very unlikely","18 - 29",Female,"$75,000 to $99,999",?
+86,No,?,"bom.gov.au","Somewhat unlikely","18 - 29",Male,?,?
+87,Yes,?,"weatherzone","Somewhat unlikely","30 - 44",Male,"$25,000 to $49,999",?
+88,Yes,?,?,?,"18 - 29",Female,"$10,000 to $24,999",?
+89,Yes,?,"Google Search Results","Very likely","18 - 29",Male,"$25,000 to $49,999","Mountain"
+90,Yes,?,"Yahoo","Very likely","18 - 29",Male,"$50,000 to $74,999",?
+91,Yes,?,?,"Somewhat likely","18 - 29",Female,"$10,000 to $24,999",?
+92,No,?,?,?,"18 - 29",Male,?,?
+93,No,?,"default weather app in my cell or Path","Very likely","30 - 44",Female,"$25,000 to $49,999",?
+94,Yes,?,"Google Now","Very likely","18 - 29",Male,"$10,000 to $24,999","Pacific"
+95,Yes,?,?,"Very likely","18 - 29",Female,"$10,000 to $24,999","Pacific"
+96,Yes,?,?,"Somewhat likely","18 - 29",Female,"$50,000 to $74,999",?
+97,No,?,?,"Very unlikely","18 - 29",Female,"$0 to $9,999","Pacific"
+98,Yes,?,"Google weather","Somewhat likely","18 - 29",Male,"$25,000 to $49,999","Pacific"
+99,Yes,?,"Iphone App","Somewhat likely","18 - 29",Female,?,?
+100,Yes,?,"yahoo weather","Somewhat likely","18 - 29",Male,?,?
