@@ -331,9 +331,9 @@ tup = incomeTrans(tup)
 final_data_table = appUseTrans(tup)
 numericTable = categoryTrans(final_data_table)
 for row in numericTable:
-    for i in range(0,len(row)):
+    for i in range(0, len(row)):
         row[i] = int(row[i])
-        
+
 
 attributeRange = [4, 5, 6, 7, 8]
 attr = np.array([[l[i] for i in attributeRange] for l in numericTable])
@@ -342,12 +342,17 @@ classAttr = np.array([[l[i] for i in classRange] for l in numericTable])
 # print(np.asarray(attr))
 # print out the numeric table
 #for rows in categoryTrans(final_data_table):
-#    for i in range(0,len(rows)):
-#        print(rows[i], end='\t')
-#    print('\n')
+#    for i in range(0, len(rows)):
+#        print(rows[i],"\t")
+#    print("\n")
+
+#print('\n'.join(['\t'.join(['{:}'.format(item) for item in row]) 
+#for row in categoryTrans(final_data_table)]))
+
+
 gnb = GaussianNB()
 clf = gnb.fit(attr, classAttr)
 for row in attr:
     print(clf.predict(row))
-#print("Number of mislabeled points out of a total %d points : %d"
+# print("Number of mislabeled points out of a total %d points : %d"
 #    % (numericTable.shape[0],(classAttr != y_pred).sum()))
