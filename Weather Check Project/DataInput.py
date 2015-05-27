@@ -322,7 +322,9 @@ def categoryTrans(tup):
             elif(row[8] in regionCategory.keys()):
                 row[8] = regionCategory[row[8]]
     return tup
-
+def printCSV(tup):
+    print('\n'.join(['\t'.join(['{:}'.format(item) for item in row]) 
+    for row in categoryTrans(tup)]))
 
 regex = '\"'
 tup = createTuple('weather-check.csv')
@@ -346,13 +348,12 @@ classAttr = np.array([[l[i] for i in classRange] for l in numericTable])
 #        print(rows[i],"\t")
 #    print("\n")
 
-#print('\n'.join(['\t'.join(['{:}'.format(item) for item in row]) 
-#for row in categoryTrans(final_data_table)]))
+printCSV(final_data_table)
 
 
-gnb = GaussianNB()
-clf = gnb.fit(attr, classAttr)
-for row in attr:
-    print(clf.predict(row))
+#gnb = GaussianNB()
+#clf = gnb.fit(attr, classAttr)
+#for row in attr:
+#    print(clf.predict(row))
 # print("Number of mislabeled points out of a total %d points : %d"
 #    % (numericTable.shape[0],(classAttr != y_pred).sum()))
