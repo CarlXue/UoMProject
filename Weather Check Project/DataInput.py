@@ -4,8 +4,8 @@ from matplotlib.colors import ListedColormap
 import csv
 import numpy as np
 import re
-# from sklearn.naive_bayes import GaussianNB
-# from sklearn.feature_extraction import DictVectorizer
+from sklearn.naive_bayes import GaussianNB
+from sklearn.feature_extraction import DictVectorizer
 
 
 def fixText(text):
@@ -329,29 +329,25 @@ tup = createTuple('weather-check.csv')
 tup = incomeTrans(tup)
 # the last data table
 final_data_table = appUseTrans(tup)
+numericTable = categoryTrans(final_data_table)
+for row in numericTable:
+    for i in range(0,len(row)):
+        row[i] = int(row[i])
+        
+
 attributeRange = [4, 5, 6, 7, 8]
-attr = [[l[i] for i in attributeRange] for l in final_data_table]
+attr = np.array([[l[i] for i in attributeRange] for l in numericTable])
 classRange = [2]
-classAttr = [[l[i] for i in classRange] for l in final_data_table]
-# for key, value in createAgeCategory(final_data_table).items() :
-#    print (key, value)
-# for row in categoryTrans(final_data_table):
-#    print(row)
-# delete header
-# final_data_table.pop(0)
+classAttr = np.array([[l[i] for i in classRange] for l in numericTable])
+# print(np.asarray(attr))
 # print out the numeric table
-for rows in categoryTrans(final_data_table):
-    for i in range(0,len(rows)):
-        print(rows[i], end='\t')
-    print('\n')
-#attrArray = np.array(attr)
-#classArray = np.array(classAttr)
-#list = ["ab","ab"]
-#array = ["ab","b"]
-# print(list)
-# print(array)
-#print (classArray)
-#gnb = GaussianNB()
-#y_pred = gnb.fit(attrArray, classArray)
-# print("Number of mislabeled points out of a total %d points : %d"
-#    % (final_data_table.shape[0],(classAttr != y_pred).sum()))
+#for rows in categoryTrans(final_data_table):
+#    for i in range(0,len(rows)):
+#        print(rows[i], end='\t')
+#    print('\n')
+gnb = GaussianNB()
+clf = gnb.fit(attr, classAttr)
+for row in attr:
+    print(clf.predict(row))
+#print("Number of mislabeled points out of a total %d points : %d"
+#    % (numericTable.shape[0],(classAttr != y_pred).sum()))
