@@ -1,2 +1,72 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<head>
+  <style>
+    p{
+        text-align: center;
+    }
+    a{
+        margin-top:20px;
+        margin-botton:20px;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        border:1px solid #2E2F30;
+        background-color: #FFFFFF;
+        font-size: 18pt;
+        border-radius:5px;
+        display:block;
+        text-decoration: none;
+        padding: 5px;
+        width:300px;
+
+    }
+    .edit {
+        width: 100px;
+        display: inline;
+        alignment: center;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+    .report{
+        width:200px;
+        display: inline;
+        alignment: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Sarah's Pharmacy</h1>
+    <p>Product page</p>
+    <a href="/products">Show product details</a>
+    <br>
+    <p style="padding-bottom: 10px;">Edit Product</p>
+    <div style="margin:0 auto; width:70px;">
+        <a class="edit" href="/products/new">Add</a>
+    </div>
+    <br>
+    <p>Customer page</p>
+    <a href="/customers">Show customer details</a>
+    <br>
+    <p style="padding-bottom: 10px;">Edit Customer</p>
+    <div style="margin:0 auto; width:70px;">
+        <a class="edit" href="/customers/new">Add</a>
+    </div>
+    <br>
+    <p>Order page</p>
+    <a href="/orders">Show orders</a>
+    <br>
+    <p style="padding-bottom: 10px;">Edit orders</p>
+    <div style="margin:0 auto; width:70px;">
+        <a class="edit" href="/orders/new">Add</a>
+    </div>
+    <br>
+    <p style="padding-bottom: 10px;">Report page</p>
+    <div style="margin:0 auto; width:370px;">
+        <a class="report" href="/reports/generate_order_4z-customer">For Customer</a>
+        <a class="report" href="/reports/generate_order_4_operator">For Operator</a>
+    </div>
+    <br>
+</body>

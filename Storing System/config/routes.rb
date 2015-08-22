@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: 'home#index'
+
   get 'reports/generate_order_4z-customer'
 
   get 'reports/generate_order_4_operator'
@@ -12,6 +15,7 @@ Rails.application.routes.draw do
   get 'edit_order/delete'
 
   resources :orders
+
   get 'edit_customer/add'
 
   get 'edit_customer/find'
@@ -21,6 +25,7 @@ Rails.application.routes.draw do
   get 'edit_customer/delete'
 
   resources :customers
+
   get 'edit_product/add'
 
   get 'edit_product/find'
@@ -30,6 +35,7 @@ Rails.application.routes.draw do
   get 'edit_product/delete'
 
   resources :products
+
   get 'home/new'
 
   get 'home/show'

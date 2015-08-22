@@ -1,8 +1,17 @@
+<head>
+  <style>
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+  </style>
+</head>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Products</h1>
 
-<table>
+<table border= "1" style="border:1px solid grey;">
   <thead>
     <tr>
       <th>Product</th>
@@ -49,3 +58,4 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+<%= link_to 'Home', home_index_path %>
