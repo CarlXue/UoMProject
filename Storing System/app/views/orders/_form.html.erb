@@ -1,0 +1,57 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :order_id %><br>
+    <%= f.text_field :order_id %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_id %><br>
+    <%= f.text_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br>
+    <%= f.text_field :product_id %>
+  </div>
+  <div class="field">
+    <%= f.label :product_quantity %><br>
+    <%= f.text_field :product_quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :order_date %><br>
+    <%= f.date_select :order_date %>
+  </div>
+  <div class="field">
+    <%= f.label :delivery_fee_rmb %><br>
+    <%= f.text_field :delivery_fee_rmb %>
+  </div>
+  <div class="field">
+    <%= f.label :discount %><br>
+    <%= f.text_field :discount %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_price_rmb %><br>
+    <%= f.text_field :unit_price_rmb %>
+  </div>
+  <div class="field">
+    <%= f.label :total_cost_rmb %><br>
+    <%= f.text_field :total_cost_rmb %>
+  </div>
+  <div class="field">
+    <%= f.label :total_price_rmb %><br>
+    <%= f.text_field :total_price_rmb %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

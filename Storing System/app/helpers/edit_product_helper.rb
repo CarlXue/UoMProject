@@ -1,0 +1,2 @@
+module EditProductHelper
+end

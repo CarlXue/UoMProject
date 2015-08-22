@@ -1,4 +1,41 @@
 Rails.application.routes.draw do
+  get 'reports/generate_order_4z-customer'
+
+  get 'reports/generate_order_4_operator'
+
+  get 'edit_order/add'
+
+  get 'edit_order/find'
+
+  get 'edit_order/update'
+
+  get 'edit_order/delete'
+
+  resources :orders
+  get 'edit_customer/add'
+
+  get 'edit_customer/find'
+
+  get 'edit_customer/update'
+
+  get 'edit_customer/delete'
+
+  resources :customers
+  get 'edit_product/add'
+
+  get 'edit_product/find'
+
+  get 'edit_product/update'
+
+  get 'edit_product/delete'
+
+  resources :products
+  get 'home/new'
+
+  get 'home/show'
+
+  get 'home/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

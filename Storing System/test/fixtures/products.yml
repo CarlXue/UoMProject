@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_id: 1
+  product_name: MyText
+  product_description: MyText
+  product_brand: MyText
+  product_standard: MyText
+  cost_aud: 1.5
+  cost_rmb: 1.5
+  unit_price_aud: 1.5
+  unit_price_rmb: 1.5
+  margin_aud: 1.5
+  margin_rmb: 1.5
+  stock_au: 
+  stock_cn: 
+
+two:
+  product_id: 1
+  product_name: MyText
+  product_description: MyText
+  product_brand: MyText
+  product_standard: MyText
+  cost_aud: 1.5
+  cost_rmb: 1.5
+  unit_price_aud: 1.5
+  unit_price_rmb: 1.5
+  margin_aud: 1.5
+  margin_rmb: 1.5
+  stock_au: 
+  stock_cn: 
