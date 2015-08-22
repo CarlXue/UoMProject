@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :customer_id %><br>
-    <%= f.text_field :customer_id %>
+    <%= f.collection_select :customer_id, @customers, :customer_firstName,:customer_firstName, include_blank:true %>
   </div>
   <div class="field">
     <%= f.label :product_id %><br>
-    <%= f.text_field :product_id %>
+    <%= f.collection_select :product_id, @products, :product_name, :product_name, include_blank:true %>
   </div>
   <div class="field">
     <%= f.label :product_quantity %><br>
@@ -42,10 +42,6 @@
   <div class="field">
     <%= f.label :unit_price_rmb %><br>
     <%= f.text_field :unit_price_rmb %>
-  </div>
-  <div class="field">
-    <%= f.label :total_cost_rmb %><br>
-    <%= f.text_field :total_cost_rmb %>
   </div>
   <div class="field">
     <%= f.label :total_price_rmb %><br>
