@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 
+  customer_id: 
+  product_id: 
+  product_quantity: 
+  order_date: 2015-08-22
+  delivery_fee_rmb: 1.5
+  discount: 1.5
+  unit_price_rmb: 1.5
+  total_cost_rmb: 1.5
+  total_price_rmb: 1.5
+
+two:
+  order_id: 
+  customer_id: 
+  product_id: 
+  product_quantity: 
+  order_date: 2015-08-22
+  delivery_fee_rmb: 1.5
+  discount: 1.5
+  unit_price_rmb: 1.5
+  total_cost_rmb: 1.5
+  total_price_rmb: 1.5

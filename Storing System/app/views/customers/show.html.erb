@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer.customer_id %>
+</p>
+
+<p>
+  <strong>Customer firstname:</strong>
+  <%= @customer.customer_firstName %>
+</p>
+
+<p>
+  <strong>Customer lastname:</strong>
+  <%= @customer.customer_lastName %>
+</p>
+
+<p>
+  <strong>Customer relationship:</strong>
+  <%= @customer.customer_relationship %>
+</p>
+
+<p>
+  <strong>Street number:</strong>
+  <%= @customer.street_number %>
+</p>
+
+<p>
+  <strong>Street name:</strong>
+  <%= @customer.street_name %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @customer.district %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @customer.province %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @customer.postcode %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @customer.mobile_number %>
+</p>
+
+<p>
+  <strong>Age group:</strong>
+  <%= @customer.age_group %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @customer.gender %>
+</p>
+
+<p>
+  <strong>Has child:</strong>
+  <%= @customer.has_child %>
+</p>
+
+<p>
+  <strong>Child age group:</strong>
+  <%= @customer.child_age_group %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

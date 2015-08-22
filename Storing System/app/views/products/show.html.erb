@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product.product_id %>
+</p>
+
+<p>
+  <strong>Product name:</strong>
+  <%= @product.product_name %>
+</p>
+
+<p>
+  <strong>Product description:</strong>
+  <%= @product.product_description %>
+</p>
+
+<p>
+  <strong>Product brand:</strong>
+  <%= @product.product_brand %>
+</p>
+
+<p>
+  <strong>Product standard:</strong>
+  <%= @product.product_standard %>
+</p>
+
+<p>
+  <strong>Cost aud:</strong>
+  <%= @product.cost_aud %>
+</p>
+
+<p>
+  <strong>Cost rmb:</strong>
+  <%= @product.cost_rmb %>
+</p>
+
+<p>
+  <strong>Unit price aud:</strong>
+  <%= @product.unit_price_aud %>
+</p>
+
+<p>
+  <strong>Unit price rmb:</strong>
+  <%= @product.unit_price_rmb %>
+</p>
+
+<p>
+  <strong>Margin aud:</strong>
+  <%= @product.margin_aud %>
+</p>
+
+<p>
+  <strong>Margin rmb:</strong>
+  <%= @product.margin_rmb %>
+</p>
+
+<p>
+  <strong>Stock au:</strong>
+  <%= @product.stock_au %>
+</p>
+
+<p>
+  <strong>Stock cn:</strong>
+  <%= @product.stock_cn %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back to list', products_path %>
+

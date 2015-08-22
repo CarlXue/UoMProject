@@ -1,0 +1,1 @@
+json.extract! @product, :id, :product_id, :product_name, :product_description, :product_brand, :product_standard, :cost_aud, :cost_rmb, :unit_price_aud, :unit_price_rmb, :margin_aud, :margin_rmb, :stock_au, :stock_cn, :created_at, :updated_at

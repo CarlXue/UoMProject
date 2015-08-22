@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 
+  customer_firstName: MyText
+  customer_lastName: MyText
+  customer_relationship: MyText
+  street_number: MyText
+  street_name: MyText
+  district: MyText
+  province: MyText
+  postcode: 
+  mobile_number: 
+  age_group: MyText
+  gender: MyText
+  has_child: 
+  child_age_group: MyText
+
+two:
+  customer_id: 
+  customer_firstName: MyText
+  customer_lastName: MyText
+  customer_relationship: MyText
+  street_number: MyText
+  street_name: MyText
+  district: MyText
+  province: MyText
+  postcode: 
+  mobile_number: 
+  age_group: MyText
+  gender: MyText
+  has_child: 
+  child_age_group: MyText
